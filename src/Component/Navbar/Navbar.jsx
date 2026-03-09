@@ -37,7 +37,7 @@
 
 
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle, Link, Button} from "@heroui/react";
-import logo from "../../assets/img/logo (1).PNG"
+import logo from "../../assets/img/logo.png"
 import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
