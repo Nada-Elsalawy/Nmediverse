@@ -4,7 +4,7 @@ import Navbar from '../../Component/Navbar/Navbar';
 import api from '../../APi/api';
 import { FileText, Image, FlaskConical, Bot, ZoomIn, ZoomOut, RotateCw, X, Download } from 'lucide-react';
 
-const API = 'http://127.0.0.1:8004';
+const API = 'https://subrhombical-akilah-interproglottidal.ngrok-free.dev';
 
 function AIText({ text }) {
   if (!text) return null;
