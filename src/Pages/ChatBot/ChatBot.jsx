@@ -7,7 +7,7 @@ import { Select, SelectItem } from "@heroui/react";
 import { Input, Button } from '@heroui/react';
 import { sendConsultation, prepareConsultationData } from '../../APi/ChatBotApi';
 import { getPatientId } from '../../getPatientId';
-import BookingNotification from '../../BookingNotification';
+
 import { useNavigate } from 'react-router-dom';
 
 export default function ChatBot() {
