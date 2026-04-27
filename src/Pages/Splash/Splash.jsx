@@ -37,7 +37,7 @@ export default function Splash() {
          <div className='p-4'>
           <img src={img3} alt="" className='w-full rounded-4xl ' />
         <p className='text-azraq-400 py-3'>Our pharmacy offers a wide range of medications and health products, all easily accessible online. With AI-powered guidance, you can get accurate recommendations, track your orders, and ensure safe and timely delivery.</p>
-      <Button className="shadow-[4px_9px_10px_rgba(0,0,0,0.5)]! rounded-lg! bg-azraq-500 mt-7.5 text-white px-9 py-6 text-xl">
+      <Button  onPress= {()=> navigate("pharmacy")} className="shadow-[4px_9px_10px_rgba(0,0,0,0.5)]! rounded-lg! bg-azraq-500 mt-7.5 text-white px-9 py-6 text-xl">
   Register Now
 </Button>
         </div>

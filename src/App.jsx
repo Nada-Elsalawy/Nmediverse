@@ -18,7 +18,9 @@ import Doctor from '../src/Dr/pages/Doctor'
 import DoctorsManagement from "../src/Managment/DoctorsManagement"
 import MediVerseDashboard from "../src/Managment/MediVerseDashboard"
 import Layout from "../src/Managment/Layout"
-
+import Pharmacy from './pharmacy/PharmacyApp'
+import PharmacyLayOut from './Layout/PharmacyLayOut'
+import PharmacyApp from './pharmacy/PharmacyApp'
 const router = createBrowserRouter([
   {
     path: "",
@@ -37,6 +39,7 @@ const router = createBrowserRouter([
       { path: "Reports", element: <ProtectedRoute><Reports /></ProtectedRoute> },
       { path: "Files", element: <Files /> },
       { path: "chatBot", element: <ProtectedRoute><ChatBot /></ProtectedRoute> },
+    
     ]
   },
   {
@@ -59,8 +62,15 @@ const router = createBrowserRouter([
 {path:"DoctorsManagement",element:<DoctorsManagement/>},
 
   ]},
- 
+    
+  {path :'' , element: <PharmacyLayOut/>, children:[
+   
+{ path: "pharmacy", element: <PharmacyApp/>},
+
+
+  ]},
 ]);
+
 
 export default function App() {
   return <RouterProvider router={router} />

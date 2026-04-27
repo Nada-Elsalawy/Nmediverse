@@ -183,7 +183,7 @@ export default function FormPage() {
       formData.append("current_medications", formValues.medication || "");
       if (file) formData.append("image", file);
 
-      const res = await axios.post("http://127.0.0.1:8000/patients/", formData, {
+      const res = await axios.post("https://subrhombical-akilah-interproglottidal.ngrok-free.dev", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 

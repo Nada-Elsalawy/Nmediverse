@@ -48,7 +48,17 @@ export default function DrHome() {
     }
 
     return (
+        
         <div className={style.container}>
+            <button
+      onClick={() => navigate(-1)}
+      className="absolute top-6 left-6 z-50 text-white text-2xl 
+                 bg-white/10 backdrop-blur-md border border-white/30 
+                 rounded-full w-12 h-12 flex items-center justify-center 
+                 shadow-lg"
+    >
+      ←
+    </button>
             <img src={photo} className={style.bgg} alt="Background" /> 
 
             <div className='backdrop-blur-md bg-white/10 border border-white/30 rounded-3xl shadow-2xl py-12 px-8 max-w-lg w-full mx-auto'>

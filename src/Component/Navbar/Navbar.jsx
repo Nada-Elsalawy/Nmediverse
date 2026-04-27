@@ -21,6 +21,7 @@ export default function App() {
 
     { name: "ChatBot", path: "/chatbot" },
 
+    { name: "Pharmacy", path: "/pharmacy" },
   ];
 
   return (
@@ -86,6 +87,16 @@ export default function App() {
             }
           >
             ChatBot
+          </NavLink>
+        </NavbarItem>
+        <NavbarItem>
+          <NavLink 
+            to="/pharmacy"
+            className={({isActive}) => 
+              isActive ? "text-[#597b97] font-semibold" : "text-foreground"
+            }
+          >
+          Pharmacy
           </NavLink>
         </NavbarItem>
       </NavbarContent>

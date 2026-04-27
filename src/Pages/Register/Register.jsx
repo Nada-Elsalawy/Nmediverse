@@ -207,9 +207,10 @@ export default function Register() {
               </Button>
 
               <Input
+             
                 isInvalid={Boolean(errors?.national_id?.message)}
                 errorMessage={errors?.national_id?.message}
-                type="text"
+                type="password"
                 {...register("national_id")}
                 placeholder="Enter your national ID"
                 classNames={{

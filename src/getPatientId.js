@@ -1,9 +1,5 @@
 
 
-// export const getPatientId = () => {
-//   const id = localStorage.getItem("patient_id");
-//   return id ? Number(id) : undefined;
-// };
 
 export const getPatientId = () => {
   const patient = localStorage.getItem("patient");
